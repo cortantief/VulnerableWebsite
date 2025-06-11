@@ -60,7 +60,8 @@
   <div class="container desc">
   <?php 
    $bdd = new PDO('mysql:host=127.0.0.1;dbname=noob;charset=utf8', 'noob', 'noob');
-   $reponse = $bdd->query("SELECT * FROM work");
+   $order = $_GET["order"] ?? "title";
+   $reponse = $bdd->query("SELECT * FROM work ORDER BY i $order");
    while ($data = $reponse->fetch(PDO::FETCH_ASSOC)) {
     ?>
 
