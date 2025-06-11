@@ -62,7 +62,7 @@
         <img class="img-circle" src="img/pic.jpg" width="110" height="110" alt="">
         <h4>Homer Simpson</h4>
         <p>C'est pas parce que je m'en fous que je comprends pas.</p>
-        <p><a href="index.php?page=membres.php&id=1">@Homer</a></p>
+        <p><a href="membres.php?id=1">@Homer</a></p>
       </div>
       <!-- col-lg-3 -->
 
@@ -70,7 +70,7 @@
         <img class="img-circle" src="img/pic2.jpg" width="110" height="110" alt="">
         <h4>Marge Simpson</h4>
         <p>Quand une femme dit que tout va bien, ça veut dire que tout va mal.</p>
-        <p><a href="index.php?page=membres.php&id=2">@Marge</a></p>
+        <p><a href="membres.php?id=2">@Marge</a></p>
       </div>
       <!-- col-lg-3 -->
 
