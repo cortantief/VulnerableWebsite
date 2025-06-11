@@ -55,38 +55,39 @@
   <!--  bluewrap -->
 
 <div>
+
+</div>
+  <div class="container desc">
   <?php 
    $bdd = new PDO('mysql:host=127.0.0.1;dbname=noob;charset=utf8', 'noob', 'noob');
    $reponse = $bdd->query("SELECT * FROM work");
    while ($data = $reponse->fetch(PDO::FETCH_ASSOC)) {
-    echo "<div>";
-    echo "<h2>" . htmlspecialchars($data['title']) . "</h2>";
-    echo "<p>" . htmlspecialchars($data['description']) . "</p>";
-    echo "<p><em>" . htmlspecialchars($data['features']) . "</em></p>";
-    echo "<a href='" . htmlspecialchars($data['link']) . "'>Visit</a>";
-    echo "</div>";
-  }
-  ?>
-</div>
-  <div class="container desc">
-    <div class="row">
+    ?>
+
+<div class="row">
+      
       <br><br>
       <div class="col-lg-6 centered">
-        <img src="img/p03.png" alt="">
+        <img src="<?php echo htmlspecialchars($data['link']); ?>" alt="">
       </div>
       <!-- col-lg-6 -->
+
       <div class="col-lg-6">
-        <h4>Clique Date</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h4><?php echo htmlspecialchars($data['title']); ?></h4>
+        <pre><?php echo htmlspecialchars($data['description']); ?></pre>
         <p>
-          <i class="fa fa-circle-o"></i> Mobile Design<br/>
+          <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($data['feature']); ?> <br/>
           <i class="fa fa-circle-o"></i> Web Design<br/>
           <i class="fa fa-circle-o"></i> Development<br/>
           <i class="fa fa-link"></i> <a href="#">Example.com</a>
         </p>
       </div>
     </div>
+<?
+  }
+  
+  ?>
+
     <!-- row -->
 
     <br><br>
