@@ -64,7 +64,7 @@
    if (!empty($_GET["order"])) {
     $order = $_GET["order"];
    };
-   $reponse = $bdd->query("SELECT * FROM work ORDER BY i $order");
+   $reponse = $bdd->query("SELECT * FROM work ORDER BY $order");
    while ($data = $reponse->fetch(PDO::FETCH_ASSOC)) {
     ?>
 
