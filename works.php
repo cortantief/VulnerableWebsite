@@ -64,6 +64,11 @@
    if (!empty($_GET["order"])) {
     $order = $_GET["order"];
    };
+   $valid = array("title", "description", "features", "link", "image");
+   if (!in_array($order, $valid)) {
+    
+    echo "<strong> invalid order by $order given" . "</strong>";
+   }
    $reponse = $bdd->query("SELECT * FROM work ORDER BY $order");
    while ($data = $reponse->fetch(PDO::FETCH_ASSOC)) {
     ?>
