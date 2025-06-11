@@ -68,7 +68,7 @@
       
       <br><br>
       <div class="col-lg-6 centered">
-        <img src="<?php echo htmlspecialchars($data['link']); ?>" alt="">
+        <img src="<?php echo htmlspecialchars($data['img']); ?>" alt="">
       </div>
       <!-- col-lg-6 -->
 
