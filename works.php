@@ -54,7 +54,20 @@
   </div>
   <!--  bluewrap -->
 
-
+<div>
+  <?php 
+   $bdd = new PDO('mysql:host=127.0.0.1;dbname=noob;charset=utf8', 'noob', 'noob');
+   $reponse = $bdd->query("SELECT * FROM work WHERE id=".$_GET['id']);
+   while ($data = $reponse->fetch(PDO::FETCH_ASSOC)) {
+    echo "<div>";
+    echo "<h2>" . htmlspecialchars($data['title']) . "</h2>";
+    echo "<p>" . htmlspecialchars($data['description']) . "</p>";
+    echo "<p><em>" . htmlspecialchars($data['features']) . "</em></p>";
+    echo "<a href='" . htmlspecialchars($data['link']) . "'>Visit</a>";
+    echo "</div>";
+}
+  ?>
+</div>
   <div class="container desc">
     <div class="row">
       <br><br>
