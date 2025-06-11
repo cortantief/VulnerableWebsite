@@ -76,10 +76,14 @@
         <h4><?php echo htmlspecialchars($data['title']); ?></h4>
         <p><?php echo htmlspecialchars($data['description']); ?></p>
         <p>
+          <?php
+          foreach($data['feature'] as $feature) {
+
+          ?>
           <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($data['feature']); ?> <br/>
-          <i class="fa fa-circle-o"></i> Web Design<br/>
-          <i class="fa fa-circle-o"></i> Development<br/>
-          <i class="fa fa-link"></i> <a href="#">Example.com</a>
+          <?php
+          }
+          ?>
         </p>
       </div>
     </div>
