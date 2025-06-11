@@ -30,10 +30,10 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="/">Accueil</a></li>
-          <li><a href="about.php">Équipe</a></li>
-          <li><a href="services.php">Services</a></li>
-          <li><a href="works.php">Travaux</a></li>
+          <li class="active"><a href="index.php?page=accueil.php">Accueil</a></li>
+          <li><a href="index.php?page=about.php">Équipe</a></li>
+          <li><a href="index.php?page=services.php">Services</a></li>
+          <li><a href="index.php?page=works.php">Travaux</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -44,8 +44,8 @@
     <div class="container">
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
-          <h4>NOTRE ÉQUIPE</h4>
-          <p>ON EST COOL!</p>
+          <h4>ON TRAVAIL DUR POUR ACCOMPLIR L'EXCELLENCE</h4>
+          <p>Et nous en sommes content</p>
         </div>
       </div>
       <!-- row -->
@@ -55,99 +55,74 @@
   <!--  bluewrap -->
 
 
-  <div class="container w">
-    <div class="row centered">
+  <div class="container desc">
+    <div class="row">
       <br><br>
-      <div class="col-lg-3">
-        <img class="img-circle" src="img/pic.jpg" width="110" height="110" alt="">
-        <h4>Homer Simpson</h4>
-        <p>C'est pas parce que je m'en fous que je comprends pas.</p>
-        <p><a href="index.php?page=membres.php&id=1">@Homer</a></p>
+      <div class="col-lg-6 centered">
+        <img src="img/p03.png" alt="">
       </div>
-      <!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img class="img-circle" src="img/pic2.jpg" width="110" height="110" alt="">
-        <h4>Marge Simpson</h4>
-        <p>Quand une femme dit que tout va bien, ça veut dire que tout va mal.</p>
-        <p><a href="index.php?page=membres.php&id=2">@Marge</a></p>
+      <!-- col-lg-6 -->
+      <div class="col-lg-6">
+        <h4>Clique Date</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>
+          <i class="fa fa-circle-o"></i> Mobile Design<br/>
+          <i class="fa fa-circle-o"></i> Web Design<br/>
+          <i class="fa fa-circle-o"></i> Development<br/>
+          <i class="fa fa-link"></i> <a href="#">Example.com</a>
+        </p>
       </div>
-      <!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img class="img-circle" src="img/pic3.jpg" width="110" height="110" alt="">
-        <h4>Montgomery Burns</h4>
-        <p>Famille, religion, amitié. Voici les 3 démons que vous devez abattre pour réussir dans les affaires.</p>
-        <p><a href="#">@Mark_BlackTie</a></p>
-      </div>
-      <!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img class="img-circle" src="img/pic4.jpg" width="110" height="110" alt="">
-        <h4>Moe Szyslak</h4>
-        <p>On pourrait vendre de l'alcool. Je fais ça très bien.</p>
-        <p><a href="#">@Moe</a></p>
-      </div>
-      <!-- col-lg-3 -->
-
     </div>
     <!-- row -->
-    <br>
-    <br>
+
+    <br><br>
+    <hr>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-6 centered">
+        <img src="img/p01.png" alt="">
+      </div>
+      <!-- col-lg-6 -->
+      <div class="col-lg-6">
+        <h4>Super Calendar</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>
+          <i class="fa fa-circle-o"></i> Mobile Design<br/>
+          <i class="fa fa-circle-o"></i> Web Design<br/>
+          <i class="fa fa-circle-o"></i> Development<br/>
+          <i class="fa fa-link"></i> <a href="#">Example.com</a>
+        </p>
+      </div>
+    </div>
+    <!-- row -->
+
+    <br><br>
+    <hr>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-6 centered">
+        <img src="img/p02.png" alt="">
+      </div>
+      <!-- col-lg-6 -->
+      <div class="col-lg-6">
+        <h4>Spain Junk</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>
+          <i class="fa fa-circle-o"></i> Mobile Design<br/>
+          <i class="fa fa-circle-o"></i> Web Design<br/>
+          <i class="fa fa-circle-o"></i> Development<br/>
+          <i class="fa fa-link"></i> <a href="#">Example.com</a>
+        </p>
+      </div>
+    </div>
+    <!-- row -->
+    <br><br>
   </div>
   <!-- container -->
 
-
-  <!-- PORTFOLIO SECTION -->
-  <div id="dg">
-    <div class="container">
-      <div class="row centered">
-        <h4>NOS COMPETENCES</h4>
-        <br>
-
-        <!-- First Chart -->
-        <div class="col-lg-3">
-          <canvas id="canvas" height="130" width="130"></canvas>
-          <br>
-          <p><b>Design</b></p>
-          <p><small>Marge dessine super bien.</small></p>
-        </div>
-        <!-- /col-lg-3 -->
-
-        <!-- Second Chart -->
-        <div class="col-lg-3">
-          <canvas id="canvas2" height="130" width="130"></canvas>
-          <br>
-          <p><b>Developement WEB</b></p>
-          <p><small>Nous sommes super compétent en sécurité de nos site web.</small></p>
-        </div>
-        <!-- /col-lg-3 -->
-
-        <!-- Third Chart -->
-        <div class="col-lg-3">
-          <canvas id="canvas3" height="130" width="130"></canvas>
-          <br>
-          <p><b>SEO</b></p>
-          <p><small>La meilleure des communications est assurée par Mr.Burns.</small></p>
-        </div>
-        <!-- /col-lg-3 -->
-
-        <!-- Fourth Chart -->
-        <div class="col-lg-3">
-          <canvas id="canvas4" height="130" width="130"></canvas>
-          <br>
-          <p><b>Sécrurité</b></p>
-          <p><small>Toutes nos applications sont incassables.</small></p>
-        </div>
-        <!-- /col-lg-3 -->
-
-
-      </div>
-      <!-- row -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- DG -->
 
   <!-- FOOTER -->
   <div id="f">
@@ -160,8 +135,6 @@
     </div>
     <!-- container -->
   </div>
-  <!-- Footer -->
-
   <!-- /.modal -->
 
   <div id="copyrights">
