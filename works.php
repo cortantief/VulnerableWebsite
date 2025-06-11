@@ -77,7 +77,9 @@
         <p><?php echo htmlspecialchars($data['description']); ?></p>
         <p>
           <?php
-          foreach($data['features'] as $feature) {
+          $features = array_map('trim', explode(',', $data['features']));
+
+          foreach($features as $feature) {
 
           ?>
           <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($feature); ?> <br/>
