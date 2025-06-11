@@ -74,7 +74,7 @@
 
       <div class="col-lg-6">
         <h4><?php echo htmlspecialchars($data['title']); ?></h4>
-        <pre><?php echo htmlspecialchars($data['description']); ?></pre>
+        <p><?php echo htmlspecialchars($data['description']); ?></p>
         <p>
           <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($data['feature']); ?> <br/>
           <i class="fa fa-circle-o"></i> Web Design<br/>
