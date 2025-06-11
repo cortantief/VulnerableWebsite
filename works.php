@@ -77,10 +77,10 @@
         <p><?php echo htmlspecialchars($data['description']); ?></p>
         <p>
           <?php
-          foreach($data['feature'] as $feature) {
+          foreach($data['features'] as $feature) {
 
           ?>
-          <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($data['feature']); ?> <br/>
+          <i class="fa fa-circle-o"></i> <?php echo htmlspecialchars($feature); ?> <br/>
           <?php
           }
           ?>
