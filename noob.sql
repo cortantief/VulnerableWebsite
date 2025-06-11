@@ -95,19 +95,19 @@ INSERT INTO `work` (`title`, `description`, `features`, `link`, `image`) VALUES
  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
  'Mobile Design, Web Design, Development', 
  'http://example.com', 
- 'img/work1.png'),
+ 'img/p01.png'),
 
 ('Super Calendar', 
  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
  'Mobile Design, Web Design, Development', 
  'http://example.com', 
- 'img/work2.png'),
+ 'img/p02.png'),
 
 ('Spain Junk', 
  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
  'Mobile Design, Web Design, Development', 
  'http://example.com', 
- 'img/work3.png');
+ 'img/p03.png');
 
 
 COMMIT;
