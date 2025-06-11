@@ -73,8 +73,47 @@ INSERT INTO `users` (`id`, `prenom`, `nom`, `password`, `image`, `bio`) VALUES
 (2, 'Marge', 'Simpson', '70b959c40fe68e799d54296ba32834ef', 'img/pic2.jpg', 'Quand une femme dit que tout va bien, ça veut dire que tout va mal.'),
 (5, 'Montgomery', 'Burns', '9726255eec083aa56dc0449a21b33190', 'img/pic3.jpg', 'Famille, religion, amitié. Voici les 3 démons que vous devez abattre pour réussir dans les affaires.'),
 (6, 'Moe', 'Szyslak', '3e1867f5aee83045775fbe355e6a3ce1', 'img/pic4.jpg', 'On pourrait vendre de l\'alcool. Je fais ça très bien.');
+
+
+-- Drop the table if it already exists
+DROP TABLE IF EXISTS `work`;
+
+-- Create the `work` table
+CREATE TABLE IF NOT EXISTS `work` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(255) NOT NULL,
+  `description` TEXT NOT NULL,
+  `features` TEXT,
+  `link` VARCHAR(255),
+  `image` VARCHAR(255),
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- Insert dummy data into `work` table
+INSERT INTO `work` (`title`, `description`, `features`, `link`, `image`) VALUES
+('Clique Date', 
+ 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
+ 'Mobile Design, Web Design, Development', 
+ 'http://example.com', 
+ 'img/work1.png'),
+
+('Super Calendar', 
+ 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
+ 'Mobile Design, Web Design, Development', 
+ 'http://example.com', 
+ 'img/work2.png'),
+
+('Spain Junk', 
+ 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s...', 
+ 'Mobile Design, Web Design, Development', 
+ 'http://example.com', 
+ 'img/work3.png');
+
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
