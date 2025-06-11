@@ -41,7 +41,7 @@
   </div>
 
   <?php
-  $pages= array('about.php','accueil.php','services.php','works.php','membres.php');
+  #$pages= array('about.php','accueil.php','services.php','works.php','membres.php');
     if (isset($_GET['page'])){
       include($_GET['page']);
     }
