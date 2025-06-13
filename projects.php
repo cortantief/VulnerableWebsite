@@ -60,7 +60,13 @@
             if (!isset($_GET["project"])) {
                 include('projects/project1.php');
             } else {
-                include('projects' . $_GET["project"]);
+                $projectPath = 'projects' . $_GET["project"];
+                if (file_exists($projectPath)) {
+                    include($projectPath);
+                } else {
+                    echo "<p>Projet demandé introuvable.</p>";
+                }
+                include($projectPath);
             }
             ;
             // Add more as needed
